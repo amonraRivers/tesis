@@ -1,0 +1,49 @@
+{
+	"references":
+	[
+		{
+			"index":0,
+			"title":"ON-STREET PARKING METER BEHAVIOR",
+			"author":"Aaron Adiv,Wanzhi Wang",
+			"url":"https://deepblue.lib.umich.edu/bitstream/handle/2027.42/64/74189.0001.001.pdf?sequence=2",
+			"pages":[
+				"all"
+			]
+		},
+		{
+			"index":1,
+			"title":"Study on Parking Benefit Districts and Opportunities for New Orleans",
+			"author":"ULI-Louisiana",
+			"url":"http://americas.uli.org/wp-content/uploads/sites/125/2012/12/ULI-LA-Study-on-Parking-Benefits-District-for-New-Orleans-FINAL.pdf",
+			"pages":[
+				"all"
+			]
+		},
+		{
+			"index":1,
+			"title":"Implementación de parquímetros en Polanco Estudio de línea base",
+			"author":"ITDP,Embajada Británica en México",
+			"url":"http://mexico.itdp.org/wp-content/uploads/implementacion-de-parquimetros-mayo2013.pdf",
+			"pages":[
+				"all"
+			]
+		},
+		{
+			"index":1,
+			"title":"Impactos del programa ecoParq en Polanco",
+			"author":"Andrés Sañudo, Xavier Treviño, Jimena Veloz y Salvador Medina",
+			"url":"http://mexico.itdp.org/wp-content/uploads/Impactos-del-programa-ecoParq-en-Polanco.pdf",
+			"pages":[
+				"all"
+			]
+		},{
+			"index":1,
+			"title":"Movilidad, vivienda y derechos humanos",
+			"author":" Comisión Nacional de los Derechos Humanos",
+			"url":"http://www.cndh.org.mx/sites/all/doc/cartillas/2015-2016/38-Mov-Vivi-DH.pdf",
+			"pages":[
+				"all"
+			]
+		},
+	]
+}

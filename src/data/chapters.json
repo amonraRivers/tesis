@@ -1,0 +1,22 @@
+[
+	{
+		"url":"/intro",
+		"name":"Introducción",
+		"file":"introducción.json"
+	},
+	{
+		"url":"/marco",
+		"name":"MarcoTeórico",
+		"file":"marcoTeorico.json"
+	},
+	{
+		"url":"/desarrollo",
+		"name":"Desarrollo",
+		"file":"desarrollo.json"
+	},
+	{
+		"url":"/concluciones",
+		"name":"Concluciones",
+		"file":"concluciones.json"
+	}
+]

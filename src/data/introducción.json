@@ -1,0 +1,74 @@
+{
+	"title": "Introducción",
+	"contents": [
+		{
+			"title": "Objetivos",
+			"contents":[
+				{
+					"texts": [
+						{
+							"text":
+								"El objetivo de éste proyecto es crear una solución para el sistema de parquimetros de una ciudad, que permita al usuario conocer donde hay espacios disponibles, pagar y recibir una alarma cuando esté por terminar su tiempo. Así tambien le permita al que administre y haga cumplir el reglamento de estacionamiento en la via publica, saber con precisión donde se encuentran los usuarios a los cuales se les ha terminado el tiempo y no han pagado."
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Descripción del problema"
+		},
+		{
+			"title": "Espectativas del proyecto"
+		},
+		{
+			"title": "Motivación",
+			"contents": [
+				{
+					"texts": [
+						{
+							"text":
+								"El ser humano como cualquier otro animal tiene como necesidad básica el transportarse. La invención de la rueda, el motor de vapor, combustión interna, etc, solamente hicieron que dicha necesidad se cumpliera de forma más efectiva y veloz. El uso masivo de dichas tecnologias ha generado consecuencias inesperadas y por consecuente soluciones ingeniosas para solucionar dichos problemas."
+						}
+					]
+				},
+				{
+					"texts": [
+						{
+							"text":
+								"Actualmente seria casi imposible imaginar el transporte privado sin el uso del automovil. De tal manera que en la Ciudad de México y en la zona metropolitana hay más de seis millones de vehiculos. Como se mencionó anteriormente, el uso indiscriminado del automovil ha traido consequencias imprevistas."
+						}
+					]
+				},
+				{
+					"texts": [
+						{
+							"text":
+								"Las consequencias más notorias de la alta cantidad de vehiculos, son: alta ocupación de los lugares de estacionamiento de la calle, un tiempo de traslado mayor, mayor contaminación. Soluciones para éstos hay muchos. Los fabricantes buscan nuevas tecnologias en automoviles electricos o híbridos, mejores motores de combustión interna, etc. El gobierno tambien ha invertido en estrategias que ayudan a solucionar estos problemas tales como el programa de bicicletas EcoBici o el programa EcoParq."
+						}
+					]
+				},
+				{
+					"texts": [
+						{
+							"text":
+								"Todas las soluciones a los problemas de movilidad actuales tiene sus problemas. Los coches hibridos o electricos son caros, la tasa a la cual se reemplazan vehiculos de combustión interna a eléctricos es sumamente baja y aunque estos vehiculos no emiten gases invernadero, las pilas que usan tienen compuestos contaminantes y dificiles de sustraer de la tierra. El programa EcoBici depende de la adopción del público, ayuda en disminuir trayectos relativamente cortos realizados en coche pero no sirve para disminuir trayectos largos, en especial en una ciudad tan grande como la Ciudad de México."
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Alcance",
+			"contents":[
+				{
+					"texts": [
+						{
+							"text":
+								""
+						}
+					]
+				}
+			]
+		}
+	]
+}
