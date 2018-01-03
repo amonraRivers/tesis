@@ -8,14 +8,25 @@
 					"texts": [
 						{
 							"text":
-								"El objetivo de éste proyecto es crear una solución para el sistema de parquimetros de una ciudad, que permita al usuario conocer donde hay espacios disponibles, pagar y recibir una alarma cuando esté por terminar su tiempo. Así tambien le permita al que administre y haga cumplir el reglamento de estacionamiento en la via publica, saber con precisión donde se encuentran los usuarios a los cuales se les ha terminado el tiempo y no han pagado."
+								"El objetivo de éste proyecto es crear una solución para mejorar la rotación de vehiculos en un sistema de parquimetros."
 						}
 					]
 				}
 			]
 		},
 		{
-			"title": "Descripción del problema"
+			"title": "Descripción del problema",
+			"contents":
+			[
+				{
+					"texts": [
+						{
+							"text":
+								"El sistema de parquimetros de la Ciudad de México tiene como objetivo aumentar la rotación de vehiculos en las zonas donde la demanda de espacios ha superado la oferta. Es una grán idea que ha sido adoptada por muchas ciudades del mundo incluyendo unas treinta ciudades grandes en estados unidos y más de 100 en europa. En todos estos lugares ha sido un éxito y la rotación de vehiculo"
+						}
+					]
+				}
+			]
 		},
 		{
 			"title": "Espectativas del proyecto"
@@ -51,7 +62,15 @@
 					"texts": [
 						{
 							"text":
-								"Todas las soluciones a los problemas de movilidad actuales tiene sus problemas. Los coches hibridos o electricos son caros, la tasa a la cual se reemplazan vehiculos de combustión interna a eléctricos es sumamente baja y aunque estos vehiculos no emiten gases invernadero, las pilas que usan tienen compuestos contaminantes y dificiles de sustraer de la tierra. El programa EcoBici depende de la adopción del público, ayuda en disminuir trayectos relativamente cortos realizados en coche pero no sirve para disminuir trayectos largos, en especial en una ciudad tan grande como la Ciudad de México."
+								"Todas las soluciones a los problemas de movilidad actuales tiene sus problemas. Los coches hibridos o electricos son caros, la tasa a la cual se reemplazan vehiculos de combustión interna a eléctricos es sumamente baja y aunque estos vehiculos no emiten gases invernadero, las pilas que usan tienen compuestos contaminantes y dificiles de sustraer de la tierra. El programa EcoBici depende de la adopción del público, ayuda en disminuir trayectos relativamente cortos realizados en coche pero no sirve para disminuir trayectos largos, en especial en una ciudad tan grande como la Ciudad de México. El sistema EcoParq ayuda a mejorar la rotación de vehiculos donde la demanda ha superado la oferta de lugares de estacionamiento como la zona de polanco. Sin embargo su funcionamiento depende de la percepción del costo hacia usuario. Algunos factores que determinan dicha percepción incluyen los siguientes: el tamaño de la multa,el precio por hora del parquimetro, la probabilidad de ser infraccionado en un recorrido de los policias y la probabilidad de que haya un recorrido por parte de los policias."
+						}
+					]
+				},
+				{
+					"texts": [
+						{
+							"text":
+								"La motivación de este proyecto surge por que la idea de implementar parquimetros es excelente ya que afecta a trayectos cortos y largos, no depende de la adquisición de nueva technología y es un área donde se pueden hacer mejoras rápidamente con alto impacto."
 						}
 					]
 				}
