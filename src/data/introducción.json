@@ -22,14 +22,44 @@
 					"texts": [
 						{
 							"text":
-								"El sistema de parquimetros de la Ciudad de México tiene como objetivo aumentar la rotación de vehiculos en las zonas donde la demanda de espacios ha superado la oferta. Es una grán idea que ha sido adoptada por muchas ciudades del mundo incluyendo unas treinta ciudades grandes en estados unidos y más de 100 en europa. En todos estos lugares ha sido un éxito y la rotación de vehiculo"
+								"El sistema de parquimetros de la Ciudad de México tiene como objetivo aumentar la rotación de vehiculos en las zonas donde la demanda de espacios ha superado la oferta. Es una grán idea que ha sido adoptada por muchas ciudades del mundo incluyendo unas treinta ciudades grandes en estados unidos y más de 100 en europa. En todos estos lugares ha sido un éxito y la rotación de vehiculo há aumentado."
+						}
+					]
+				},					
+				{
+					"texts": [
+						{
+							"text":
+								"La rotación de vehiculos en sistemas de parquimetros dependen de la percepción que tiene el usuario de tener una multa. Se podría decir que un usuario puede tomar la decisión de infraccionar la ley si el valor esperado de la consequencia de hacerlo es menor a cierto humbral."
+						}
+					]
+				},	
+				{
+					"texts": [
+						{
+							"text":
+								"Según un estudio de massachuseets, el valor esperado de cometer una infracción en el parquimetro depende de los siguientes factores: el tamaño de la multa,el precio por hora del parquimetro, la probabilidad de ser infraccionado en un recorrido de los policias y la probabilidad de que haya un recorrido por parte de los policias. El factor más importante concluye el estudio es la aplicación de la ley"
+						}
+					]
+				},	
+				{
+					"texts": [
+						{
+							"text":
+								"En méxico es de conocimiento popular que la ley casi no se aplica y cuando se hace, los elementos policiacos son corruptibles. Es por esta misma razón que en el estado de méxico a lo largo del año 2017 no se aplicaron infracciones, la corrupción se volvio una pandemia tan grande que se prefirió dejar de aplicar la ley que dejar que se usara para extorcionar a conductores. Sin embargo sistemas como las fotomultas han tenido grandes éxitos. El éxito más grande es quitar del proceso al elemento humano, ineficaz y corruptible mejorando así la aplicación de la ley.",
+							"tags":[]
+						}
+					]
+				},	
+				{
+					"texts": [
+						{
+							"text":
+								"En el caso de los parquimetros el proceso para multar consta de 2 etapas, la primera es la busqueda de infractor,y la segunda el levantaminto de la infracción. El registrar la infración es un proceso automatizado donde el policia registra imagenes del vehiculo como evidencia de la falta de pago. Sin embargo, la búsqueda de los infractores es un proceso manual, depende completamente de los policias. Es aqui donde se puede hacer una mejora inmediata para que el proceso de busqueda deje de ser manual y por ende ineficiente y corruptible."
 						}
 					]
 				}
 			]
-		},
-		{
-			"title": "Espectativas del proyecto"
 		},
 		{
 			"title": "Motivación",
@@ -62,7 +92,7 @@
 					"texts": [
 						{
 							"text":
-								"Todas las soluciones a los problemas de movilidad actuales tiene sus problemas. Los coches hibridos o electricos son caros, la tasa a la cual se reemplazan vehiculos de combustión interna a eléctricos es sumamente baja y aunque estos vehiculos no emiten gases invernadero, las pilas que usan tienen compuestos contaminantes y dificiles de sustraer de la tierra. El programa EcoBici depende de la adopción del público, ayuda en disminuir trayectos relativamente cortos realizados en coche pero no sirve para disminuir trayectos largos, en especial en una ciudad tan grande como la Ciudad de México. El sistema EcoParq ayuda a mejorar la rotación de vehiculos donde la demanda ha superado la oferta de lugares de estacionamiento como la zona de polanco. Sin embargo su funcionamiento depende de la percepción del costo hacia usuario. Algunos factores que determinan dicha percepción incluyen los siguientes: el tamaño de la multa,el precio por hora del parquimetro, la probabilidad de ser infraccionado en un recorrido de los policias y la probabilidad de que haya un recorrido por parte de los policias."
+								"Todas las soluciones a los problemas de movilidad actuales tiene sus problemas. Los coches hibridos o electricos son caros, la tasa a la cual se reemplazan vehiculos de combustión interna a eléctricos es sumamente baja y aunque estos vehiculos no emiten gases invernadero, las pilas que usan tienen compuestos contaminantes y dificiles de sustraer de la tierra. El programa EcoBici depende de la adopción del público, ayuda en disminuir trayectos relativamente cortos realizados en coche pero no sirve para disminuir trayectos largos, en especial en una ciudad tan grande como la Ciudad de México. El sistema EcoParq ayuda a mejorar la rotación de vehiculos donde la demanda ha superado la oferta de lugares de estacionamiento como la zona de polanco. Sin embargo su funcionamiento depende de la percepción del costo de infraccion que tenga el usuario."
 						}
 					]
 				},
