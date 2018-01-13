@@ -8,7 +8,7 @@
 					"texts": [
 						{
 							"text":
-								"El objetivo de éste proyecto es crear una solución para mejorar la rotación de vehiculos en un sistema de parquimetros."
+								"El objetivo de éste proyecto es crear una solución para mejorar la rotación de vehiculos en una ciudad que hace uso de parquimetros."
 						}
 					]
 				}
@@ -84,7 +84,7 @@
 					"texts": [
 						{
 							"text":
-								"Las consequencias más notorias de la alta cantidad de vehiculos, son: alta ocupación de los lugares de estacionamiento de la calle, un tiempo de traslado mayor, mayor contaminación. Soluciones para éstos hay muchos. Los fabricantes buscan nuevas tecnologias en automoviles electricos o híbridos, mejores motores de combustión interna, etc. El gobierno tambien ha invertido en estrategias que ayudan a solucionar estos problemas tales como el programa de bicicletas EcoBici o el programa EcoParq."
+								"Las consequencias más notorias de la alta cantidad de vehiculos, son: alta ocupación de los lugares de estacionamiento de la calle, un tiempo de traslado mayor y mayor contaminación. Soluciones para éstos hay muchos. Los fabricantes buscan nuevas tecnologias en automoviles electricos o híbridos, mejores motores de combustión interna, etc. El gobierno tambien ha invertido en estrategias que ayudan a solucionar estos problemas tales como el programa de bicicletas EcoBici o el programa EcoParq."
 						}
 					]
 				},
@@ -113,7 +113,40 @@
 					"texts": [
 						{
 							"text":
-								""
+								"Este proyecto busca proponer una solución funcional integral para informar al ciudadano de cuanto tiempo disponible dispone y qué lugares están disponibles. Así mismo, al gobierno, donde se encuentran las ubicaciónes de parquimetro ocupadas, pagadas o morosas"
+						}
+					]
+				},
+								{
+					"texts": [
+						{
+							"text":
+								"Forzosamente se requiere para tal tarea saber si en un momento en específico un cajón de parquimetro se encuentra libre o nó. Por tal motivo se requiere sensorizar de alguna manera los cajones de estacinamiento"
+						}
+					]
+				},
+				{
+					"texts": [
+						{
+							"text":
+								"De igual manera se necesita un lugar donde un usuario pueda saber qué lugares se encuentran disponibles en cualquier momento. Una página de internet o una aplicación podrían resolver este aspecto. Dada la naturaleza del momento en donde el usuario tiene necesidad de saber donde se puede estacionar, donde solamente trae un dispositivo movil a su alcance, una aplicación resulta ser lo más indicado."
+						}
+					]
+				},
+				{
+					"texts": [
+						{
+							"text":
+								"Para el gobierno se necesitan varias cosas, administrar a los oficiales que están patruyando los parquimetros, a los parquimetros en sí y determinar si un vehículo en un cajón de estacoinamiento ha pagado o no. Para esto un panel administrativo para funcionarios públicos encargados y una aplicación móvil para los que levantan infracciónes en los parquimetros."
+						}
+					]
+				}
+,
+				{
+					"texts": [
+						{
+							"text":
+								"La solución que se propondrá incluirá por lo tanto, un sensor, dos aplicaciones, una página de internet y un backend para coordinar todas éstas partes móviles"
 						}
 					]
 				}

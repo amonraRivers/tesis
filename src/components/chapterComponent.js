@@ -60,7 +60,7 @@ export default class ChapterComponent extends Component {
 		}
 		if (section.texts && section.texts.length > 0) {
 			texts = (
-				<p key={n + " paragraph"}>
+				<p key={n + " paragraph"} style={{"text-align": "justify"}}>
 					{section.texts.map((element, index) => {
 						return (
 							<Text
