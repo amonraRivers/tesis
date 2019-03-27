@@ -75,7 +75,18 @@ En este momento se vé que existe una clara variación en la lectura de los sens
 
 ## Temperatura del sensor
 
-Con la intuición de que el problema se debía a una variación de la sensibilidad del sensor elejido dada la temperatura a la que se encuentra y que la variación de la temperatura del pavimento es de 0 a 70 grados centígrados. 
+En días posteriores a realizar la prueba, junto con la intuición de que los falsos positivos se deben a una variación de la sensibilidad causada por la temperatura, se llevan a cabo una serie de experimentos para corroborar la teoría. 
+
+Es conectado un sensor de calor al mismo shield en el cual se encuentra el dispositivo electromagnético y posteriormente se introducen ambos sensores a una cámara aislada. Se introduce un calentador de aire que sirve para desoldar circuitos integrados de PCBs. 
+
+Las condiciones de temperatura extrema son simuladas de manera controlada, ya que la pistola de calor tiene controles precisos y el chip de sensado de temperatura nos informa de la temperatura. 
+
+Muestro a continuación la información del primer experimento a continuación
+
+**TODO MOSTRAR MEDICIONES**
+
+Claramente es observada la correlación que confirma la teoría. En ésta situación se tiene que encontrar una manera de eliminar el efecto de la temperatura. Esto debido a que la variación de temperatura en el distrito federal va de 0 - 70 grados centígrados, lo que podría ocasionar la generación de información falsa en la ocupación de cajones de estacionamiento.
+
 
 
 ## detectar la huella de los coches
