@@ -1,6 +1,40 @@
 # Temas
 ## Cobros 
+# Requerimientos.
+
+Antes de poder definir lo que es esperado de un sistema de monitoreo en tiempo real de los cajones de estacionamiento de una ciudad, cabe desmenuzar el sistema actual de ecoparq para conocer sus flaquezas y poder proponer una solución integrál que tenga como objetivo final mejorar la movilidad en la ciudad.
+
+## Actores
+En primer lugar se busca entender cuales son los actores del sistema actual y cuales son sus funciones.
+
+El actor más evidente es el conductor que está buscando donde estacionarse. Dicho conductor genera tránsito entre más tiempo esté merodeando la zona en la cual quiere encontrar lugar. Es reportado que el 30% del transito en los lugares más conflictivos se produce por éstos. El conductor es responsable de pagar su boleto de parquimetro y de situarlo en el tablero del vehículo de modo visible. En su caso tambíen tiene que cubrir el costo de la multa y el retiro de la "araña" en caso de ser infraccionado por el sistema ecoparq.
+
+Las empresas se encargan de instalar los sistemas físicos que proveen de boletos, cobrar por el tiempo de estacionamiento y entregar el dinero a Gobierno.
+
+Los policías y miembros de ecoparq se dedican a rondar los poligonos de parquimetros en busca de automoviles morosos, que no hayan pagado o que hayan inclumplido en colocar el boleto en el tablero del coche de forma visible. Son responsables de colocar los inmovilizadores de coches y de retirarlos una vez que se hayan cubierto las sanciones económicas correspondientes a la multa y al retiro de inmovilizador.
+
+El gobierno tiene como función recaudar el dinero pagado por los conductores y destinar el 30% a obra pública y a la recuperación del espacio público.
+
+## Problemas comunes
+
+Ya que se tiene una idea más clara de quienes actuan en el sistema y la manera en que interactuan, es hora de analizar cuales son los puntos débiles más comunes en el aspecto operativo de el sistema ecoparq y más alla, de estacionarse dentro de las zonas más con las vias más disputadas en cuestión de estacionamiento. 
+
+La forma más sencilla de conocer los problemas operativos fue con una serie de entrevistas tanto con los conductores como con las personas dedicadas a buscar vehiculos morosos y multarlos.
+
+En entrevistas verbales con los usuarios de ecoparq, se encuentran los siguientes puntos en común. 
+* Tuve que salir de mi edificio para pagar el parquímetro
+* Tuve que cambiar un billete para pagar el parquímetro
+* Tardé mucho en encontrar lugar.
+
+En entrevistas con los oficiales de transito y miembros de ecoparq encargados de multar y colocar las "arañas", en realidad no mencionan ninguna queja. En cuanto a la respuesta que dan al preguntar sobre la estrategia seguida para encontrar vehículos morosos es muy interesante. Simplemente recorren las calles, revisando "papelitos" en los autos y multando a quien encuentran.
+
+Dentro del alcance de este proyecto solamente no se pretende analizar las complicaciones gubernamentales o de los 
+
 ## Requerimientos del sistema en vía pública.
+## Requerimientos del sistema para conductores.
+## Requerimientos del sistema para policías.
+## Requerimientos del sistema para gobierno.
+## Funcionamiento del backend.
 ## Designación del sensor a utilizar
 
 Uno de los requerimientos fundamentales de éste desarrollo es poder conocer en tiempo real si un cajón de estacionamiento está siendo utilizado. 
@@ -77,9 +111,9 @@ En este momento se vé que existe una clara variación en la lectura de los sens
 
 En días posteriores a realizar la prueba, junto con la intuición de que los falsos positivos se deben a una variación de la sensibilidad causada por la temperatura, se llevan a cabo una serie de experimentos para corroborar la teoría. 
 
-Es conectado un sensor de calor al mismo shield en el cual se encuentra el dispositivo electromagnético y posteriormente se introducen ambos sensores a una cámara aislada. Se introduce un calentador de aire que sirve para desoldar circuitos integrados de PCBs. 
+Es conectado un sensor de calor al mismo shield en el cual se encuentra el dispositivo electromagnético y posteriormente se introducen ambos sensores a una cámara aislada. Se introduce una pistola de calor que sirve para desoldar circuitos integrados de PCBs. 
 
-Las condiciones de temperatura extrema son simuladas de manera controlada, ya que la pistola de calor tiene controles precisos y el chip de sensado de temperatura nos informa de la temperatura. 
+Las condiciones de temperatura extrema son simuladas de manera controlada, ya que la pistola de calor tiene controles precisos y el chip de sensado de temperatura nos informa la temperatura actual. 
 
 Muestro a continuación la información del primer experimento a continuación
 
@@ -87,9 +121,39 @@ Muestro a continuación la información del primer experimento a continuación
 
 Claramente es observada la correlación que confirma la teoría. En ésta situación se tiene que encontrar una manera de eliminar el efecto de la temperatura. Esto debido a que la variación de temperatura en el distrito federal va de 0 - 70 grados centígrados, lo que podría ocasionar la generación de información falsa en la ocupación de cajones de estacionamiento.
 
+La manera de resolver ésto es utilizando un par de funciones que tiene el circuito integrado llamadas SET/RESET Con ellas se puede remover el error asociado con el cambio de offset en función a la temperatura. Lo que hacen dichas funciones es invertir la polaridad magnñetica en los elementos de sensado dentro del circuito mismo.
 
+El algoritmo es muy sencillo, pero resulta de vital importancia para el desarrollo presentado. El primer paso es ejecutar la función SET, esto posiciona la magnetización interna en la dirección del campo SET. Se realiza una lectura, dicha lectura contiene no solo la medida de la respuesta del sensor al campo magnético al que está expuesto, pero tambien contiene un OFFSET que llamaremos H. En otras palabras:
+
+$$ 
+Lectura1=H+OFFSET
+$$
+
+Posteriormente se ejectua la funcion RESET, lo que cambia la dirección de la magnetización de los resistores de sensado en la dirección opesta al SET. Entonces se hace una lectura que nos provee al igual que en el caso anterior de dos elementos, el primero es el OFFSET y el segundo la misma respuesta al campo magnético al que se encuentra sometido pero con el signo invertido, de tal manera que 
+
+$$
+Lectura2 =-H+OFFSET
+$$
+
+Con este sistema de ecuaciones obtenemos el OFFSET y el valor de H que es usada para la medición final.
+
+$$
+OFFSET=(Lectura1+lectura2)/2
+$$
+$$
+H=Lectura1-OFFSET
+$$
+
+Con ésta sencilla corrección es puesta en marcha otra prueba a la intemperie, de 24 hrs, la cual consigue los resultados que se tienen a continuación.
+
+**TODO mostroar Datos**
+
+
+Los resultados son muy alentadores, 0 falsos positivos, 0 variación en el estado base de los sensores y un 100% de detección de vehículos.
 
 ## detectar la huella de los coches
+
+
 ## Transmitir la informacion en tiempo real a todos los dispositivos.
 ## Real Time Web Sockets
 
