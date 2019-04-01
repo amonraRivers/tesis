@@ -15,31 +15,61 @@ Los policías y miembros de ecoparq se dedican a rondar los poligonos de parquim
 
 El gobierno tiene como función recaudar el dinero pagado por los conductores y destinar el 30% a obra pública y a la recuperación del espacio público.
 
-## Problemas comunes
+## Requerimientos
+Ya que se tiene una idea más clara de quienes actuan en el sistema y la manera en que interactuan, es hora de encontrar cuales son los puntos débiles más comunes en el aspecto operativo de el sistema ecoparq y más alla, de estacionarse dentro de las zonas más con las vias más disputadas en cuestión de estacionamiento. De esta manera proveer de una solución que mejore de manera considerable la operación de dichos espacios.
 
-Ya que se tiene una idea más clara de quienes actuan en el sistema y la manera en que interactuan, es hora de analizar cuales son los puntos débiles más comunes en el aspecto operativo de el sistema ecoparq y más alla, de estacionarse dentro de las zonas más con las vias más disputadas en cuestión de estacionamiento. 
+## Requerimientos del sistema para conductores.
 
-La forma más sencilla de conocer los problemas operativos fue con una serie de entrevistas tanto con los conductores como con las personas dedicadas a buscar vehiculos morosos y multarlos.
+La forma más sencilla de conocer los problemas más comunes por parte de los usuarios fue con una serie de entrevistas con los conductores.
 
-En entrevistas verbales con los usuarios de ecoparq, se encuentran los siguientes puntos en común. 
+En entrevistas verbales con los usuarios de ecoparq, se encuentran los siguientes puntos. 
 * Tuve que salir de mi edificio para pagar el parquímetro
 * Tuve que cambiar un billete para pagar el parquímetro
 * Tardé mucho en encontrar lugar.
 
+Como se vé, los primeros 2 puntos se refieren a las complicaciones que tienen las personas al pagar el parquímetro. Por lo tanto el sistema propuesto requiere que los pagos se hagan desde un lugar remoto. Al mismo tiempo, el sistema debe poder aceptar pago con tarjetas de crédito.
+
+De forma menos sutil, el tercer punto se refiere a un problema de desconocimiento. Dicho problema alude a que cuando un conductor llega al área cercana a su destino, la única información con la que cuenta para tomar una decisión es lo aquella que le provee la calle sobre la que se encuentra. Esto es áltamente problemático ya que resulta aleatorio o "suerte" encontrar un lugar libre. Han habido ocaciones en mi experiencia personal donde estacionar el coche en la calle toma 40 minutos.
+
+Por lo tanto resulta imperativo el requerimiento poder saber en tiempo real la disponibilidad y ocupación de las calles de forma remota.
+Además, ésta información debe ser accesible a los ocupantes de un vehículo en movimiento.
+
+
+## Requerimientos del sistema para policías.
+
 En entrevistas con los oficiales de transito y miembros de ecoparq encargados de multar y colocar las "arañas", en realidad no mencionan ninguna queja. En cuanto a la respuesta que dan al preguntar sobre la estrategia seguida para encontrar vehículos morosos es muy interesante. Simplemente recorren las calles, revisando "papelitos" en los autos y multando a quien encuentran.
 
-Dentro del alcance de este proyecto solamente no se pretende analizar las complicaciones gubernamentales o de los 
+Resulta alarmante la estrategia que utilizan. Es cuestión de alatoriedad el que se encuentre a los conductores que ya sea intencionalmente o por descuido dejan de pagar el parquimetro sean encontrados. Además se incentivan las mafias donde la gente se ponga de acuerdo con los vigilantes de los cuadrantes de ecoparq para no ser multados y así cometer corrupción sin conocimiento del gobierno. El problema más importante para la operación de los parquímetros, al igual que con los conductores resulta ser el desconocimiento. El tener que revisar manualmente y físicamente un papel para determinar quienes faltan a sus obligaciones en las áreas de parquímetro.
+
+Por lo tanto, para los oficiales, la solución debe determinar la ubicación aproximada de los vehículos que no hacen su pago y presentarla en tiempo real. Al mismo tiempo debe poder distinguir entre un vehiculo con tiempo vigente y pagado, de uno ausente de pago.
+
+Dentro del alcance de este proyecto solamente no se pretende analizar las complicaciones gubernamentales o administrativas del sistema de parquimetros.
 
 ## Requerimientos del sistema en vía pública.
-## Requerimientos del sistema para conductores.
-## Requerimientos del sistema para policías.
+
+En vista de que el problema operativo más grande es la falta de información, el sistema que se propone debe poder determinar de alguna manera la ubicación de los vehiculos que ocupan cajones de estacionamiento. Por un lado para que los conductores sepan que puntos están desocupados y tomar una decisión de a donde dirigirse para encontrar lugar con mayor probabilidad. Del otro lado, a los oficiales, les permite tomar una mejor decisión de a donde dirigirse para poner multas y los inmovilizadores.
+
+Para lograr ésto, un sistema de sensado debe ocuparse y así discernir qué cajones se encuentran accesibles para los conductores ansiosos por arribar.
+
+Los problemas más comunes a la hora de instalar un sistema de sensado, son el vandalismo, la intemperie y errores en la lectura.E l vandalismo como en cualquier ciudad del mundo es un problema en la Ciudad de México, hecho que se refleja en las paredes pintadas de grafiti, letreros rallados. Así tambien con aspectos tecnológicos encontramos el robo de cobre e incluso la destrucción de parquimetros. 
+
+Es por esto que el requerimiento es que el sistema de sensado tenga el poco o nulo impacto visual. Así mismo, la poca exposición del aparato de sensado a la calle lo cuidará del medio ambiente. De tal suerte que se cuide la inversión de infraestructura de forma natural lo más posible y así alargar la vida util de los dispositivos.
+
+El método de sensado que se elija tiene que ser capaz de comunicar a un *API* en internet la ocupación de su cajón asignado. Y al hacerlo debe cometer la menor cantidad de errores posibles. Cualquier sistema no es 100% a prueba de fallas pero debe procurar aspirar a serlo. El requerimiento es que en el *MVP*, las lecturas tengan una confianza de mínimo el 95%.
+
 ## Requerimientos del sistema para gobierno.
+
+La transparencia es algo que se debe fomentar y que mejor manera de hacerlo utilizando un lugar donde gobierno puede ver en tiempo real la ocupación, las recaudaciones del día y las multas levantadas. Además el poder exponer al público dichos números.
+
+**TODO mejorar esta parte**
 ## Funcionamiento del backend.
 ## Designación del sensor a utilizar
 
 Uno de los requerimientos fundamentales de éste desarrollo es poder conocer en tiempo real si un cajón de estacionamiento está siendo utilizado. 
 
-Para ello evidentemente, el primer paso es detectar un vehículo. Existen muchas soluciones implementadas incluso el día de hoy. Las más conocidas son, soluciones con sensores infrarrojos, magnéticos y sónicos.
+Para ello evidentemente, el primer paso es detectar un vehículo. Existen muchas soluciones implementadas incluso el día de hoy. Las más conocidas son, soluciones con sensores infrarrojos, magnéticos, sónicos, visuales.
+
+Las cámaras pueden ser utilizados para detectar vehículos, ejemplos claros de ésto son las camaras de velocidad que se usan para generar infracciones. Dichas cámaras normalmente vienen acompañadas de un radar que és el que hace la detección. Sin embargo se puede hacer análisis de imagenes para así detectar coches. 
 
 Los sistemas infrarrojos los podemos encontrar en accesos de peaje como los del segundo piso del anillo periférico en la Ciudad de México. Dichos sensores activan los lectores activos de peaje que hacen cobros. Para su instalación normalmente se utilizan dos partes, un emisor de luz infrarroja y un receptor de la misma. Cuando un objeto interrumpe la conexión entre ambas partes, se efectúa una acción. En el caso del sistema de peaje, el lector de rfid se enciende y monitorea al vehículo que está ingresando.
 
@@ -50,6 +80,8 @@ Las soluciones magnética, tratan de un sistema que mide el campo magnético en 
 De los tres sistemas descritos, los tres tienen ventajas y desventajas analizadas posteriormente. Al analizar los diferentes métodos, obtuvimos el grupo de los no viables, y aquellos capaces de cumplir con los requerimientos.
 
 ### Sistemas no viables
+
+Las cámaras tiene la ventaja clara en cuanto a la cantidad de información que pueden recopilar. Detectar coches no es dificil con ellas, sin embargo sufren de graves problemas que incumplen con los requerimientos establecidos previamente. Necesitan mucha infraestructura para su colocación, son altamente visibles y susceptibles al vandalismo. Están expuestas a la intemperie y cualquier interferencia en su campo visual puede generar lecturas incompletas.
 
 El sistema infrarrojo goza de tener una muy alta precisión. Sin embargo el hecho de que requiera la utilización de dos equipos en lugares apartados es un factor determinante en la decisión de no utilizarlos como medio de detección vehicular en la vía pública. Un segundo factor decisivo es que cualquier objeto que interfiera con la recepción de la luz, un peatón, un ave, haría que nuestro sistema diera falsos positivos.
 
