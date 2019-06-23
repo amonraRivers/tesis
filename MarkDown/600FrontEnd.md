@@ -30,6 +30,8 @@ Por suerte para el desarrollo, se tenía el acceso a las computadoras mac necesa
 
 En años recientes, empezaron a generarse plataformas de desarrollo móvil con características muy similares a aquellas del desarrollo web. El lenguaje preferido Javascript con estilos CSS y un layout XML al estilo HTML. Los principales competidores son Vue Native, Ionic y React Native
 
-### Ionic y Cordoba
+### Ionic y CordoVa
+
+S
 
 ### React Native y Vue
