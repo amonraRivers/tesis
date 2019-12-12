@@ -12,7 +12,7 @@ La rotación de vehículos en sistemas de parquímetros dependen de la percepci�
 
 Según un estudio de massachuseets, el valor esperado de cometer una infracción en el parquímetro depende de los siguientes factores: el tamaño de la multa,el precio por hora del parquímetro, la probabilidad de ser infraccionado en un recorrido de los policías y la probabilidad de que haya un recorrido por parte de los policías. El factor más importante concluye el estudio es la aplicación de la ley.
 
-En méxico es de conocimiento popular que la ley casi no se aplica y cuando se hace, los elementos policíacos son corruptibles. Es por esta misma razón que en el estado de méxico a lo largo del año 2017 no se aplicaron infracciones, la corrupción se volvió una pandemia tan grande que se prefirió dejar de aplicar la ley que dejar que se usara para extorcionar a conductores. Sin embargo sistemas como las fotomultas han tenido grandes éxitos. El éxito más grande es quitar del proceso al elemento humano, ineficaz y corruptible mejorando así la aplicación de la ley.
+En méxico es de conocimiento popular que la ley casi no se aplica y cuando se hace, los elementos policíacos son corruptibles. Es por esta misma razón que en el estado de méxico a lo largo del año 2017 no se aplicaron infracciones viales, la corrupción se volvió una pandemia tan grande que se prefirió dejar de aplicar la ley que dejar que se usara para extorcionar a conductores. Sin embargo sistemas como las fotomultas han tenido grandes éxitos. El éxito más grande es quitar del proceso al elemento humano, ineficaz y corruptible mejorando así la aplicación de la ley.
 
 ## Motivación
 
