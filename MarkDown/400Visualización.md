@@ -69,11 +69,11 @@ Para ejemplificar dicho problema en una escala menor, usaré como ejemplo un app
 
 Ecobici tiene un app en el cual uno puede observar todas las estaciones, en teoría en tiempo real se puede observar cuantas bicicletas tiene cada estación y cuantos lugares disponibles para el depósito de las mismas. A continuación presento el una imagen tomada por la aplicación en uso en marzo 2019.
 
-![Mapa de ecobici](images/mapaEcobici.png)
+![Mapa de ecobici](../images/mapaEcobici.png)
 
 El mapa es claramente imposible de navegar, no se reconocen áreas geograficas por la cantidad abismal de objetos en él. Encontrar un área se hace por medio de prueba y error, además de que no provee de información útil en este momento.
 
-![Mapa de ecobici](images/mapaEcobici.png)
+![Mapa de ecobici](../images/mapaEcobici.png)
 
 Una vez que nos acercamos se entiende el mapa un poco más y la información que se transmite por el canal del color tiene más sentido.
 
@@ -88,7 +88,7 @@ Aunque el algoritmo de los k-medias no asegura un resultado óptimo, es un excel
 
 Podemos observar el producto del algoritmo a continuación.
 
-![Mapa de ecobici](images/mapaEcobici.png)
+![Mapa de ecobici](../images/mapaEcobici.png)
 
 Notoriamente vemos un panel mucho más limpio.
 
