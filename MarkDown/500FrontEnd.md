@@ -104,6 +104,30 @@ Los casos de uso que se tomaron en consideración son descritos en un listado a 
 
 ## Casos de Uso
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```plantumlcode
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam backgroundColor transparent
+actor Conductor
+actor Policia
+rectangle "Pagar Parquimetro" {
+  Conductor -- (checkout)
+  (checkout) .> (payment) : include
+  (help) .> (checkout) : extends
+  (checkout) -- Policia
+}
+@enduml
+```
+
 ## Vistas
 
 # Aplicación para Oficial de tránsito
