@@ -94,7 +94,9 @@ Finalmente podemos indagar la tercera aseveración "Tardé mucho en encontrar lu
 
 Éste es un problema grave de falta de información que permite que los conductores tomen decisiones poco óptimas para estacionarse. Existe el siguiente estudio **estudio** que nos indica que el 30% del transito en lugares de alta demanda es ocacionada por automovilistas en busca de dejar su vehiculo a la orilla de la calle. Con mayor y mejor información ellos podrían tomar mejores decisiones y no solo llegar a su destino más rápido, además disminuir las congestiones de transito para los demás que solamente están de paso. Por otro lado la sensación que tienen los automovilistas son amargas, estresantes y enfurecedoras. Son éstos sentimientos lo que sirven de ejecutor para que un conductor pudiera tomarse un tiempo para buscar, con ésta mejor información las acciones que debe realizar. La solución por ende debe cumplir el caso de uso **Como conductor quiero revisar los espacios disponibles para estacionarme adentro de un área de interés**
 
-Los casos de uso que se tomaron en consideración son descritos en un listado a continuación y se explican a más detalle posteriormente. Se tomó la consideración de solamente incluir los casos de uso más importantes.
+## Casos de Uso
+
+Los casos de uso que se tomaron en consideración para la aplicación del conductor son descritos en un listado a continuación y se explican a más detalle posteriormente. Se tomó la consideración de solamente incluir los más importantes.
 
 - Realizar un pago de parquímetro.
 - Revisar el uso actual de parquímetro.
@@ -102,33 +104,64 @@ Los casos de uso que se tomaron en consideración son descritos en un listado a 
 - Revisar espacios disponibles en un área de interés.
 - Generar recordatorio de expiración de uso de parquimetro.
 
-## Casos de Uso
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
 ```plantumlcode
 @startuml
 left to right direction
 skinparam packageStyle rectangle
 skinparam backgroundColor transparent
 actor Conductor
-actor Policia
-rectangle "Pagar Parquimetro" {
-  Conductor -- (checkout)
-  (checkout) .> (payment) : include
-  (help) .> (checkout) : extends
-  (checkout) -- Policia
+actor BackEnd
+rectangle "SPOTS - Conductor" {
+  Conductor --(Pagar el parquimetro)
+  Conductor --(Estado de uso actual)
+  Conductor -- (Ver historial)
+  Conductor -- (Revisar estado de sensores)
+  Conductor -- (Generar Recordatorio)
+  (Generar Recordatorio) -- BackEnd
 }
 @enduml
 ```
 
-## Vistas
+A continuación en cada uno de los casos de uso, ahondaremos en las secuencias e interacciones que suceden en cada uno. Además muestro las vistas que aparecen durante el mismo caso de uso.
+
+Es importante mencionar que aunque no es un caso de uso Registrarse y acceder a la cuenta, es un requerimiento necesario para todos los casos de uso que describiremos posteriormente y por lo tanto es una precondición para todos.
+
+### Pagar el parquímetro
+
+#### Diagrama de Sequencia
+
+#### Vistas
+
+#### Descripción
+
+En la aplicación el conductor debe de navegar a la pestaña del mapa. De ahí haciendo zoom sobre su posición podrá seleccionar el espacio adecuado. Al seleccionar el cajón aparece en su pantalla un modal que le permite generar una reservación. Establece el tiempo que desea permanecer, con un máximo de 3hrs. Una vez que introduce las placas de su vehiculo y continua con el proceso, se le realiza el cobro de manera automática a una tarjeta de crédito que ya tenga dada de alta en el sistema.
+
+En caso de no tener un metodo de pago establecido, al conductor le aparece una vista en la que tiene que ingresar una para poder seguir con el proceso de pago.
+
+### Estado de uso actual
+
+Cuando un conductor necesita revisar el estado de uso actual de su vehículo, puede visitar la pestaña de **TODO** Estacionamiento en la barra de navegación inferior y en ese lugar le aparece una lista con información compacta y expandible de todos los parquímetros pagados por el usuario.
+
+#### Diagrama de Sequencia
+
+#### Vistas
+
+### Revisar historial de uso de parquímetro.
+
+En el caso de revisar el historial, el conductor, solamente tiene que navegar a la pestaña de historial y ahi puede revisar de forma paginada todos los pagos que haya hecho.
+
+#### Diagrama de Sequencia
+
+#### Vistas
+
+### Generar Recordatorio
+
+Para generar un recordatorio, existen dos flujos que se pueden llevar a cabo.
+El primero es
+
+#### Diagrama de Sequencia
+
+#### Vistas
 
 # Aplicación para Oficial de tránsito
 
@@ -136,6 +169,19 @@ rectangle "Pagar Parquimetro" {
 
 - Revisar espacios morosos.
 - Revisar placas de vehículo.
+
+```plantumlcode
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam backgroundColor transparent
+actor Oficial
+rectangle "SPOTS - Transito" {
+  Oficial --(Revisar espacios morosos)
+  Oficial --(Revisar placas de vehículo)
+}
+@enduml
+```
 
 ### Busqueda de Morosos
 
