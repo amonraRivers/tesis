@@ -1,4 +1,4 @@
-# Requerimientos.
+# Analisis del problema.
 
 Antes de poder definir lo que es esperado de un sistema de monitoreo en tiempo real de los cajones de estacionamiento de una ciudad, cabe desmenuzar el sistema actual de ecoparq para conocer sus flaquezas y poder proponer una solución integrál que tenga como objetivo final mejorar la movilidad en la ciudad.
 
