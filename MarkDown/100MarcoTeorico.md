@@ -38,7 +38,7 @@ Impuestos a precios de combustibles, cobros por propiedad, cobros de congestion.
 
 Medidas de incentivación,Mejorar el transportes publico, infraestructura para bicicletas y peatones. Mayores opciones de movilidad y un desarrollo urbano compacto.
 
-## Precios de combustibñe-
+## Precios de combustible-
 
 Los subsidios a los hidrocarburos eincentivan el uso del vehiculo privado y a las recorridos largos.
 Los impuestos a los combustibles al contrario generan un uso racionalizado del automovil.

@@ -2,17 +2,23 @@
 
 ## Objetivos
 
-El objetivo de éste proyecto es crear una solución para mejorar la rotación de vehículos en una ciudad que hace uso de parquímetros.
+El objetivo de éste proyecto es proponer una solución para mejorar la rotación de vehículos en una ciudad que hace uso de parquímetros.
 
 ## Descripción del problema
 
-El sistema de parquímetros de la Ciudad de México tiene como objetivo aumentar la rotación de vehículos en las zonas donde la demanda de espacios ha superado la oferta. Es una grán idea que ha sido adoptada por muchas ciudades del mundo incluyendo unas treinta ciudades grandes en estados unidos y más de 100 en europa. En todos estos lugares ha sido un éxito y la rotación de vehiculo há aumentado.
+En ciudades con grandes poblaciones y en particular un amplio parque vehicular como lo es el de la CDMX, existen zonas en donde la demanda de espacios para coches es tán álta que encontrar un espacio se vuelve un reto prácticamente imposible de superar.
+
+Hablando de experiencia propia, un sábado por la mañana en 2015 cerca de la avenida Reforma en la colonia Cuahutemoc de la CDMX una reunion con tres amistades resultó en 40 minutos de conducir por las calles aledañas sin lograr estacionarme. Ésta y muchas otras experiencias repetitivas, aunque puedan parecer una falacia anecdótica son respaldadas por el Instituto de Políticas para el Transporte y el Desarrollo (ITDP). Éste organismo informa que el 30% del tráfico generado en la Ciudad de México es debido a que los conductores tardan en promedio entre 15 y 20 minutos dando vueltas para encontrar un lugar para estacionarse.
+
+Una de las principales medidas para combatir el problema que és encontrar un lugar de estacionamiento, la Ciudad de México implementó un sistema de parquímetros. Éste sistema tiene como objetivo aumentar la rotación de vehículos en las zonas donde la demanda de espacios ha superado la oferta. Es una grán idea con amplia adopción en muchas ciudades del mundo incluyendo unas treinta ciudades grandes en estados unidos y más de 100 en europa. En verdad es todo un éxito y la rotación de vehiculos há aumentado.
+
+Posterior a la implementacion del programa ecoParq el cual es el encargado del sistema de parquimetros, surgen áreas de oportunidad de mejora en el servicio y la eficiencia.
+
+En méxico es de conocimiento popular que la ley casi no se aplica y cuando se hace, los elementos policíacos son corruptibles. Es por esta misma razón que en el estado de méxico a lo largo del año 2017 no se aplicaron infracciones viales, la corrupción se volvió una pandemia tan grande que el gobierno mismo prefirió dejar de aplicar la ley que dejar que se usara para extorcionar a conductores. Al contrario, sistemas como las fotomultas han tenido grandes éxitos. El éxito más grande es quitar del proceso al elemento humano, ineficaz y corruptible mejorando así la aplicación de la ley.
 
 La rotación de vehículos en sistemas de parquímetros dependen de la percepción que tiene el usuario de tener una multa. Se podría decir que un usuario puede tomar la decisión de infraccionar la ley si el valor esperado de la consecuencia de hacerlo es menor a cierto humbral.
 
 Según un estudio de massachuseets, el valor esperado de cometer una infracción en el parquímetro depende de los siguientes factores: el tamaño de la multa,el precio por hora del parquímetro, la probabilidad de ser infraccionado en un recorrido de los policías y la probabilidad de que haya un recorrido por parte de los policías. El factor más importante concluye el estudio es la aplicación de la ley.
-
-En méxico es de conocimiento popular que la ley casi no se aplica y cuando se hace, los elementos policíacos son corruptibles. Es por esta misma razón que en el estado de méxico a lo largo del año 2017 no se aplicaron infracciones viales, la corrupción se volvió una pandemia tan grande que se prefirió dejar de aplicar la ley que dejar que se usara para extorcionar a conductores. Sin embargo sistemas como las fotomultas han tenido grandes éxitos. El éxito más grande es quitar del proceso al elemento humano, ineficaz y corruptible mejorando así la aplicación de la ley.
 
 ## Motivación
 

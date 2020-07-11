@@ -25,3 +25,9 @@ http://www.inegi.org.mx/
 El Financiero, Salvador García, “El transporte público un insulto al pasajero”, 04/19/2016, Available at: http://www.elfinanciero.com.mx/opinion/el-transporte-publico-un-insulto-al-pasajero.html
 
 La Jornada, Laura Gómez, “Rechazo y descontrol en el primer día de la operación de parquímetros en Polanco” (2012) Available at: http://www.jornada.unam.mx/2012/01/10/capital/032n1cap
+
+---
+
+Bull 2003; Ciudad de
+Seattle 2008; Environmental Defense Action 2008; Broaddus, Litman et al. 2009; R. Arnold, V. Smith, J.
+Doan, R. Barry, J. Blakesley, P. de-Corla, M. Muriello, G. Murthy 2010; Pardo 2012
